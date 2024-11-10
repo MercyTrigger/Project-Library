@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./main.js"></script>
+    <title>Library</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="./library-svgrepo-com.svg" alt="Library icon" width="75">
+                <h1>Library</h1>
+            </div>
+            <div>
+                <ul>
+                    <li>Log In</li>
+                    <li>Sign up</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h2 class="add-book">+Add book</h2>
+        </div>
+        <!-- <dialog> -->
+            <form action="" class="form-book">
+                <ul>
+                    <li>
+                        <label for="author">Author</label>
+                        <input type="text" id="author" name="author">
+                    </li>
+                    <li>
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="title">
+                    </li>
+                    <li>
+                        <label for="pages">Pages</label>
+                        <input type="number" id="pages" name="pages">
+                    </li>
+                    <li>
+                        <label class="last-label" for="read-status">Have you read this book?</label>
+                        <input type="checkbox" id="read-status" name="read-status">
+                    </li>
+                </ul>
+            </form>
+        <!-- </dialog> -->
+        <!-- <div class="library-field">            
+            <div class="library-description">
+                <span id="add">Add a book</span>
+                <span id="delete">Delete a book</span>
+            </div>
+        </div> -->
+    </main>    
+</body>
+</html>

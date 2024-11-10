@@ -1,0 +1,123 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+span, li {
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    background-color: #1c274c;
+    color: #ffffff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 95vw;
+    margin: 0 auto;
+}
+
+div, nav ul, nav {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    justify-content: space-between;
+}
+
+nav ul {
+    gap: 1rem;
+}
+
+/* ul li:last-child, main div span {
+    padding: .4rem .8rem;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #1c274c;
+} */
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main div span {
+    color: #ffffff;
+    background-color: #1c274c;
+}
+
+div:has(.add-book) {
+    margin-top: 2rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.form-book ul {
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input {
+    outline: none;
+    border-radius: 5px;
+    border-width: 0;
+    height: 1.3rem;
+}
+
+label {
+    display: inline-block;
+    width: 3rem;
+    text-align: center;
+}
+
+.last-label {
+    width: auto;
+    ~ input {
+        accent-color: purple;
+        height: 1rem;
+        margin: 0;
+    }
+}
+
+li:has(.last-label) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .3rem;
+}
+
+input[type="checkbox"] {
+    width: 1rem;
+}
+/* .form-book input {
+    width: 80%;
+} */
+
+/* main .library-field {
+    width: 30rem;
+    height: 3rem;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: .4rem;
+    border-radius: 15px;
+}
+.library-description {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+} */
+
