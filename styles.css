@@ -11,6 +11,7 @@ span, li {
 }
 
 body {
+    overflow: hidden;
     margin: 0;
     background-color: #1c274c;
     color: #ffffff;
@@ -40,13 +41,6 @@ nav ul {
     gap: 1rem;
 }
 
-/* ul li:last-child, main div span {
-    padding: .4rem .8rem;
-    border-radius: 10px;
-    background-color: #ffffff;
-    color: #1c274c;
-} */
-
 main {
     display: flex;
     justify-content: center;
@@ -64,17 +58,27 @@ div:has(.add-book) {
 }
 
 .form-book ul {
-    height: 10rem;
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    height: 20rem;
+    background-color: #ffffff;
+    color: #000000;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 input {
+    background-color: rgb(240, 240, 240);
     outline: none;
     border-radius: 5px;
-    border-width: 0;
-    height: 1.3rem;
+    border: 1px solid black;
+    height: 1.4rem;
+    padding: .2rem;
+}
+
+input:focus {
+    background-color: #ffffff;
 }
 
 label {
@@ -86,21 +90,59 @@ label {
 .last-label {
     width: auto;
     ~ input {
-        accent-color: purple;
         height: 1rem;
         margin: 0;
     }
 }
 
-li:has(.last-label) {
+li:has(.last-label), li:has(button) {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: .3rem;
 }
 
+form button {
+    padding: .4rem .8rem;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    background-color: #5ef9c3;
+    cursor: pointer;
+}
+
 input[type="checkbox"] {
     width: 1rem;
+}
+
+.exit-modal {
+    position: absolute;
+    right: .1rem;
+    top: .3rem;
+    cursor: pointer;
+}
+
+form {
+    position: relative;
+}
+
+dialog {
+    border-radius: 10px;
+    padding: 0;
+    border: 2px solid black;
+}
+
+.parent-dialog {
+    position: absolute;
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+    opacity: .2;
+    justify-content: center;
+    align-items: center;
+
 }
 /* .form-book input {
     width: 80%;
