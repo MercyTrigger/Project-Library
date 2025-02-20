@@ -39,6 +39,15 @@ nav {
 
 nav ul {
     gap: 1rem;
+    li {
+        font-size: 1.25rem;
+    }
+    li + li {
+        color: #000000;
+        background-color: #ffffff;
+        border-radius: 7%;
+        padding: .5rem;
+    }
 }
 
 main {
